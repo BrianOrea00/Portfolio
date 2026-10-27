@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Brian Orea — Developer</title>
+    <meta
+      name="description"
+      content="Brian Orea (Arisu) is a full-stack developer and fourth-year Computer Science student in Pandi, Bulacan, Philippines. React, Node.js, PostgreSQL, Python, and Linux."
+    />
+    <link rel="canonical" href="https://brianorea.dev/" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0710'/%3E%3Cpath d='M9 8l8 8-8 8' stroke='%23ff79c6' stroke-width='4' fill='none' stroke-linecap='square'/%3E%3C/svg%3E"
+    />
+    <meta property="og:title" content="Brian Orea — Developer" />
+    <meta
+      property="og:description"
+      content="Interactive terminal portfolio of Brian Orea (Arisu): full-stack web, Python desktop tools, and Linux."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://brianorea.dev/" />
+    <meta property="og:image" content="https://brianorea.dev/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Brian Orea — Developer" />
+    <meta
+      name="twitter:description"
+      content="Interactive terminal portfolio of Brian Orea (Arisu): full-stack web, Python desktop tools, and Linux."
+    />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0710" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f3fb" />
+    <meta name="color-scheme" content="dark light" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('arisu-theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: light)').matches
+                ? 'light'
+                : 'dark';
+          document.documentElement.dataset.theme = theme;
+        } catch (error) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+    <style>
+      html {
+        background: #0a0710;
+        color-scheme: dark;
+      }
+      html[data-theme='light'] {
+        background: #f7f3fb;
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+      }
+      #root > .fallback {
+        min-height: 100dvh;
+        max-width: 46rem;
+        margin: 0 auto;
+        padding: 2rem 1.25rem;
+        background: #0a0710;
+        color: #f8f2ff;
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .fallback a {
+        color: #8be9fd;
+      }
+      .fallback h1,
+      .fallback h2 {
+        line-height: 1.25;
+      }
+      .fallback ul {
+        padding-left: 1.25rem;
+      }
+      @media (prefers-color-scheme: light) {
+        #root > .fallback {
+          background: #f7f3fb;
+          color: #1c1428;
+        }
+        .fallback a {
+          color: #1d4fb8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="fallback">
+        <h1>Brian Orea — Developer</h1>
+        <p>
+          Brian Orea (Arisu) is a fourth-year Computer Science student in Pandi, Bulacan,
+          Philippines. He builds full-stack web applications with React, Node.js, and PostgreSQL,
+          Python desktop tools, and works on Linux. Available for freelance client work.
+        </p>
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>ayos-AI</strong> — AI-assisted motorcycle mechanic booking and diagnostic system
+            for Pandi, Bulacan. Thesis in progress.
+          </li>
+          <li>
+            <strong>Paschal Inventory</strong> — Inventory and requisition system built for Paschal
+            Multi-Purpose Cooperative.
+          </li>
+          <li>
+            <strong>Three.js Realism</strong> — Personal browser experiments in lighting, materials,
+            and scene composition with Three.js.
+          </li>
+        </ul>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:deathscytheiv@gmail.com">deathscytheiv@gmail.com</a></li>
+          <li><a href="https://github.com/BrianOrea00" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li>
+            <a href="https://www.facebook.com/orea.brian.5/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+        </ul>
+        <p>This portfolio is an interactive terminal — enable JavaScript to type commands.</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
